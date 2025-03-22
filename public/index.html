@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Festa del Pesce - Bagnolo in Piano</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Festa del Pesce di Bagnolo in Piano</h1>
+    <p>Sabato 15, 22, 29 Marzo - Sabato 5, 12 Aprile - Domenica 6, 13 Aprile</p>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Menù</h2>
+      <!-- Menù estratto dalle foto -->
+      <div class="menu-section">
+        <h3>Antipasti</h3>
+        <ul>
+          <li>Conchiglie aperte - € 1,20</li>
+          <li>Insalata di mare (polpo, seppie e gamberetti) - € 5,00</li>
+          <li>Moscardini affogati con polenta - € 5,00</li>
+          <li>Sarde in Saor - € 5,00</li>
+        </ul>
+      </div>
+
+      <div class="menu-section">
+        <h3>Primi (Piatti unici)</h3>
+        <ul>
+          <li>Spaghetti allo scoglio - € 10,50</li>
+          <li>Paella di pesce (per 2 persone) - € 19,00</li>
+        </ul>
+      </div>
+
+      <div class="menu-section">
+        <h3>Secondi di Pesce</h3>
+        <ul>
+          <li>Fritto misto di calamari e gamberi - € 10,00</li>
+          <li>Spiedini di pesce (gamberi e calamari) - € 10,00</li>
+          <li>Filetto di branzino con ortaggi croccanti - € 10,00</li>
+          <li>Trancio di salmone con taccole croccanti - € 10,00</li>
+          <li>Grigliata mista (gamberone, branzino e spiedino) - € 13,00</li>
+        </ul>
+      </div>
+
+      <div class="menu-section">
+        <h3>Secondi di Terra</h3>
+        <ul>
+          <li>Prosciutto di Parma - € 5,00</li>
+          <li>Lombo di maiale alla mediterranea - € 9,00</li>
+        </ul>
+      </div>
+
+      <div class="menu-section">
+        <h3>Contorni</h3>
+        <ul>
+          <li>Insalata mista - € 2,00</li>
+          <li>Patatine fritte (stick) - € 2,50</li>
+        </ul>
+      </div>
+
+      <div class="menu-section">
+        <h3>Dolci</h3>
+        <ul>
+          <li>Coppa Tiramisù - € 3,50</li>
+          <li>Coppa Black & White - € 3,50</li>
+          <li>Coppa Zuppa Inglese - € 3,50</li>
+          <li>Cheesecake ai mirtilli - € 3,50</li>
+          <li>Sorbetto al limone - € 2,00</li>
+          <li>Sorbetto al caffè - € 2,00</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="prenotazione">
+      <h2>Prenota Ora</h2>
+    <form id="reservationForm">
+  <label for="name">Nome:</label>
+  <input type="text" id="name" name="name" required />
+
+  <label for="phone">Numero di Telefono:</label>
+  <input type="text" id="phone" name="phone" required />
+
+  <label for="quantity">Numero di Persone:</label>
+  <input type="number" id="quantity" name="quantity" min="1" required />
+
+  <label for="timeSlot">Orario:</label>
+  <select id="timeSlot" name="timeSlot" required>
+    <option value="">-- Seleziona --</option>
+    <option value="9-11">9-11</option>
+    <option value="15-19">15-19</option>
+  </select>
+  
+  <label for="orderDetails">Piatti e Quantità (specifica i piatti desiderati e il numero):</label>
+  <textarea id="orderDetails" name="orderDetails" rows="4" placeholder="Esempio: 2 Spaghetti allo scoglio, 1 Paella di pesce"></textarea>
+
+  <button type="submit">Prenota</button>
+</form>
+
+      <p id="responseMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Organizzato da PD Bagnolo in Piano. Per info contattaci!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Stile di base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+header, footer {
+  background: #0275d8;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0.5em 0;
+}
+
+main {
+  padding: 1em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+#menu .menu-section {
+  margin: 1em 0;
+}
+
+.menu-section ul {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+form label {
+  margin: 0.5em 0 0.2em;
+}
+
+form input, form select {
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+button {
+  padding: 0.7em;
+  background-color: #0275d8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #025aa5;
+}
+
+/* Tabella admin */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+table th, table td {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  text-align: center;
+}
