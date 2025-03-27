@@ -1,111 +1,105 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <title>Festa del Pesce - Bagnolo in Piano</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa del Pesce a Bagnolo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Festa del Pesce di Bagnolo in Piano</h1>
-    <p>Sabato 15,22 Marzo - Domenica 16,23 Marzo - Sabato 5, 12 Aprile - Domenica 6, 13 Aprile</p>
-  </header>
+    <header>
+        <h1>Festa del Pesce a Bagnolo</h1>
+        <nav>
+            <a href="#prenotazioni">Prenotazioni</a>
+            <button id="menuButton">️ Menu</button>
+        </nav>
+    </header>
 
-  <main>
-    <section id="menu">
-      <h2>Menù</h2>
-      <!-- Menù estratto dalle foto -->
-      <div class="menu-section">
-        <h3>Antipasti</h3>
-        <ul>
-          <li>Conchiglie aperte - € 1,20</li>
-          <li>Insalata di mare (polpo, seppie e gamberetti) - € 5,00</li>
-          <li>Moscardini affogati con polenta - € 5,00</li>
-          <li>Sarde in Saor - € 5,00</li>
-        </ul>
-      </div>
+    <section id="prenotazioni">
+        </section>
 
-      <div class="menu-section">
-        <h3>Primi (Piatti unici)</h3>
-        <ul>
-          <li>Spaghetti allo scoglio - € 10,50</li>
-          <li>Paella di pesce (per 2 persone) - € 19,00</li>
-        </ul>
-      </div>
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>️ Menu</h2>
+            <div class="menu-section">
+                <p>Pane e coperto - €2.00</p>
+                <p>Confezione asporto - €1.20</p>
+            </div>
+            <div class="menu-section">
+                <h3> Antipasti</h3>
+                <p>Insalata di mare (polpo, seppie e gamberetti) - €10.50</p>
+                <p>Moscardini affogati con crostini - €10.50</p>
+                <p>Insalata di gamberi con valeriana e salsa rosa - €10.00</p>
+                <p>Insalata di salmone con olive taggiasche - €10.50</p>
+            </div>
+            <div class="menu-section">
+                <h3> Piatti Unici</h3>
+                <p>Spaghetti allo scoglio - €15.00</p>
+                <p>Paella di pesce (per 2 persone) - €32.00</p>
+            </div>
+            <div class="menu-section">
+                <h3> Primi Piatti</h3>
+                <p>Risotto classico ai frutti di mare - €12.00</p>
+                <p>Spaghetti alle vongole - €12.00</p>
+                <p>Mezze maniche con gamberi, pomodorini, olive taggiasche e pecorino - €12.00</p>
+            </div>
+            <div class="menu-section">
+                <h3> Secondi Piatti di Pesce</h3>
+                <p>Fritto misto di calamari e gamberi - €15.00</p>
+                <p>Spiedini di pesce (gamberi e calamari) - €14.00</p>
+                <p>Filetto di branzino con ortaggi croccanti - €14.00</p>
+                <p>Trancio di salmone alla griglia con taccole croccanti - €14.50</p>
+                <p>Grigliata mista di pesce (gamberone, spiedino e branzino) - €22.00</p>
+            </div>
+            <div class="menu-section">
+                <h3> Secondi Piatti di Terra</h3>
+                <p>Prosciutto di Parma - €9.50</p>
+                <p>Lombo di maiale alla mediterranea - €10.00</p>
+            </div>
+            <div class="menu-section">
+                <h3> Contorni</h3>
+                <p>Insalata mista - €3.50</p>
+                <p>Polenta fritta (Stick) - €4.00</p>
+                <p>Patatine fritte - €3.50</p>
+            </div>
+            <div class="menu-section">
+                <h3> Dolci</h3>
+                <p>Coppa Tiramisù - €4.00</p>
+                <p>Black & White - €4.00</p>
+                <p>Coppa Zuppa Inglese - €4.00</p>
+                <p>Cheesecake ai mirtilli - €4.00</p>
+                <p>Sorbetto al limone - €3.00</p>
+                <p>Sorbetto al caffè - €3.00</p>
+            </div>
+            <div class="menu-section">
+                <h3> Vini</h3>
+                <p>Vino bianco frizzante (secco) - €6.00</p>
+                <p>Vino bianco fermo (secco) - €6.00</p>
+                <p>Chardonnay Maschio (frizzante) - €10.00</p>
+                <p>Pignoletto (frizzante) - €10.00</p>
+                <p>Prosecco Millesimato (frizzante) - €10.00</p>
+                <p>Pinot Bianco (fermo) - €12.00</p>
+                <p>Verdicchio (bianco fermo) - €12.00</p>
+                <p>Malvasia (dolce) - €10.00</p>
+                <p>Lambrusco Foglie Rosse (secco) - €13.00</p>
+                <p>Lambrusco Ottocento Nero (secco) - €13.00</p>
+            </div>
+            <div class="menu-section">
+                <h3> Acqua e Bevande</h3>
+                <p>Acqua naturale (1 litro) - €2.00</p>
+                <p>Acqua frizzante (1 litro) - €2.00</p>
+                <p>Acqua naturale (1/2 litro) - €1.50</p>
+                <p>Acqua frizzante (1/2 litro) - €1.50</p>
+                <p>Coca Cola in lattina (330cc) - €3.00</p>
+                <p>Aranciata Fanta in lattina (330cc) - €3.00</p>
+                <p>Amari - €3.00</p>
+                <p>Grappa - €3.00</p>
+                <p>Caffè - €1.50</p>
+            </div>
+        </div>
+    </div>
 
-      <div class="menu-section">
-        <h3>Secondi di Pesce</h3>
-        <ul>
-          <li>Fritto misto di calamari e gamberi - € 10,00</li>
-          <li>Spiedini di pesce (gamberi e calamari) - € 10,00</li>
-          <li>Filetto di branzino con ortaggi croccanti - € 10,00</li>
-          <li>Trancio di salmone con taccole croccanti - € 10,00</li>
-          <li>Grigliata mista (gamberone, branzino e spiedino) - € 13,00</li>
-        </ul>
-      </div>
-
-      <div class="menu-section">
-        <h3>Secondi di Terra</h3>
-        <ul>
-          <li>Prosciutto di Parma - € 5,00</li>
-          <li>Lombo di maiale alla mediterranea - € 9,00</li>
-        </ul>
-      </div>
-
-      <div class="menu-section">
-        <h3>Contorni</h3>
-        <ul>
-          <li>Insalata mista - € 2,00</li>
-          <li>Patatine fritte (stick) - € 2,50</li>
-        </ul>
-      </div>
-
-      <div class="menu-section">
-        <h3>Dolci</h3>
-        <ul>
-          <li>Coppa Tiramisù - € 3,50</li>
-          <li>Coppa Black & White - € 3,50</li>
-          <li>Coppa Zuppa Inglese - € 3,50</li>
-          <li>Cheesecake ai mirtilli - € 3,50</li>
-          <li>Sorbetto al limone - € 2,00</li>
-          <li>Sorbetto al caffè - € 2,00</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="prenotazione">
-      <h2>Prenota Ora</h2>
-    <form id="reservationForm">
-  <label for="name">Nome:</label>
-  <input type="text" id="name" name="name" required />
-
-  <label for="phone">Numero di Telefono:</label>
-  <input type="text" id="phone" name="phone" required />
-
-  <label for="quantity">Numero di Persone:</label>
-  <input type="number" id="quantity" name="quantity" min="1" required />
-
-  <label for="timeSlot">Orario:</label>
-  <select id="timeSlot" name="timeSlot" required>
-    <option value="">-- Seleziona --</option>
-    <option value="9-11">9-11</option>
-    <option value="15-19">15-19</option>
-  </select>
-  
-  <label for="orderDetails">Piatti e Quantità (specifica i piatti desiderati e il numero):</label>
-  <textarea id="orderDetails" name="orderDetails" rows="4" placeholder="Esempio: 2 Spaghetti allo scoglio, 1 Paella di pesce"></textarea>
-
-  <button type="submit">Prenota</button>
-</form>
-
-      <p id="responseMessage"></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Organizzato da PD Bagnolo in Piano. Per info contattaci!</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

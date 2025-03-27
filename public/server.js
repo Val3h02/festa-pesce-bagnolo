@@ -4,25 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     setupReservationForm();
   }
-
-  // Gestione del modal del menu
-  const menuButton = document.getElementById('menuButton');
-  const menuModal = document.getElementById('menuModal');
-  const closeButton = document.querySelector('.close');
-
-  menuButton.addEventListener('click', () => {
-    menuModal.style.display = 'block';
-  });
-
-  closeButton.addEventListener('click', () => {
-    menuModal.style.display = 'none';
-  });
-
-  window.addEventListener('click', (event) => {
-    if (event.target === menuModal) {
-      menuModal.style.display = 'none';
-    }
-  });
 });
 
 /* --- Funzioni per la homepage (index.html) --- */
